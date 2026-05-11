@@ -1,0 +1,171 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+  --primary-color: #6c63ff;
+  --dark-color: #222;
+  --light-color: #ffffff;
+  --gray-color: #f4f4f4;
+}
+
+/* BODY */
+body{
+  font-family: Arial, sans-serif;
+  background-color: var(--gray-color);
+}
+
+/* HEADER */
+.header{
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  background-color: var(--light-color);
+
+  border-bottom: 1px solid #ddd;
+
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+
+  color: var(--primary-color);
+}
+
+/* NAVIGATION */
+.nav{
+  display: flex;
+  gap: 20px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: var(--dark-color);
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav a:hover{
+  color: var(--primary-color);
+}
+
+/* HERO */
+.hero{
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+.hero-content h1{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p{
+  font-size: 18px;
+  margin-bottom: 30px;
+
+  color: #555;
+}
+
+/* BUTTON */
+.btn{
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background-color: var(--primary-color);
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background-color: #4f46e5;
+
+  transform: translateY(-3px);
+}
+
+/* HAMBURGER */
+#menu-toggle{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.hamburger span{
+  width: 25px;
+  height: 3px;
+
+  background-color: var(--dark-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+  .hamburger{
+    display: flex;
+  }
+
+  .nav{
+    position: absolute;
+
+    top: 80px;
+    right: 0;
+
+    width: 200px;
+
+    background-color: white;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .nav{
+    display: flex;
+  }
+
+  .hero-content h1{
+    font-size: 36px;
+  }
+
+  .hero-content p{
+    font-size: 16px;
+  }
+
+}
