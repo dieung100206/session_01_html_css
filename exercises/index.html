@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
 
-  <title>My Portfolio</title>
-
-  <link rel="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
 
-    <div class="logo">
-      Diệu.dev
-    </div>
+                <!-- Logo -->
+                <h1 class="logo">Diệu</h1>
 
-    <!-- Hamburger Menu -->
-    <input type="checkbox" id="menu-toggle">
+                <!-- Hamburger Checkbox -->
+                <input type="checkbox" id="menu-toggle" />
 
-    <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+                <!-- Hamburger Icon -->
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-    </nav>
+                <!-- Navigation -->
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
-  </header>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <main class="hero">
+    <!-- Main -->
+    <main>
 
-    <div class="hero-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Hello, I'm Diệu</h2>
+                <p>Frontend Developer & Web Design Learner</p>
 
-      <h1>Hello, I'm Diệu</h1>
+                <a href="#" class="btn">
+                    View My Work
+                </a>
+            </div>
+        </section>
 
-      <p>
-        Frontend Developer passionate about building modern websites.
-      </p>
-
-      <a href="#" class="btn">
-        View My Work
-      </a>
-
-    </div>
-
-  </main>
+    </main>
 
 </body>
 </html>
